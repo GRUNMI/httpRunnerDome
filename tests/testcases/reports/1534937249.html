@@ -1,0 +1,1572 @@
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> - TestReport</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0 auto;
+      width: 960px;
+    }
+    #summary {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    #summary th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    #summary td {
+      background-color: lightblue;
+      text-align: center;
+      padding: 4px 8px;
+    }
+    .details {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    .details th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    .details tr .passed {
+      background-color: lightgreen;
+    }
+    .details tr .failed {
+      background-color: red;
+    }
+    .details tr .unchecked {
+      background-color: gray;
+    }
+    .details td {
+      background-color: lightblue;
+      padding: 5px 12px;
+    }
+    .details .detail {
+      background-color: lightgrey;
+      font-size: smaller;
+      padding: 5px 10px;
+      text-align: center;
+    }
+    .details .success {
+      background-color: greenyellow;
+    }
+    .details .error {
+      background-color: red;
+    }
+    .details .failure {
+      background-color: salmon;
+    }
+    .details .skipped {
+      background-color: gray;
+    }
+
+    .button {
+      font-size: 1em;
+      padding: 6px;
+      width: 4em;
+      text-align: center;
+      background-color: #06d85f;
+      border-radius: 20px/50px;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    a.button{
+      color: gray;
+      text-decoration: none;
+    }
+    .button:hover {
+      background: #2cffbd;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      width: 50%;
+      position: relative;
+      transition: all 3s ease-in-out;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .popup .close:hover {
+      color: #06d85f;
+    }
+    .popup .content {
+      max-height: 80%;
+      overflow: auto;
+      text-align: left;
+    }
+
+    @media screen and (max-width: 700px) {
+      .box {
+        width: 70%;
+      }
+      .popup {
+        width: 70%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Test Report: </h1>
+
+  <h2>Summary</h2>
+  <table id="summary">
+
+    <tr>
+      <th>START AT</th>
+      <td colspan="4">2018-08-22 19:27:29</td>
+    </tr>
+    <tr>
+      <th>DURATION</th>
+      <td colspan="4">1.184 seconds</td>
+    </tr>
+    <tr>
+      <th>PLATFORM</th>
+      <td>HttpRunner 1.5.9 </td>
+      <td>CPython 3.6.5 </td>
+      <td colspan="2">Windows-7-6.1.7601-SP1</td>
+    </tr>
+    <tr>
+      <th>TOTAL</th>
+      <th>SUCCESS</th>
+      <th>FAILED</th>
+      <th>ERROR</th>
+      <th>SKIPPED</th>
+      <!-- <th>ExpectedFailure</th>
+      <th>UnexpectedSuccess</th> -->
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <!-- <td>0</td>
+      <td>0</td> -->
+    </tr>
+  </table>
+
+  <h2>Details</h2>
+
+  
+  
+  <h3>haha</h3>
+  <table id="suite_1" class="details">
+    <tr>
+      <th>base_url</th>
+      <td colspan="2">http://www.kuaidi100.com</td>
+      <th colspan="2" class="detail">
+        <a class="button" href="#suite_output_1">parameters & output</a>
+        <div id="suite_output_1" class="overlay">
+            <div class="popup">
+                <h2>Parameters and Output</h2>
+                <a class="close" href="#suite_1">&times;</a>
+                <div class="content">
+                  <div style="overflow: auto">
+                      <table>
+                        <tr>
+                          <th>variables</th>
+                          <th>output</th>
+                        </tr>
+                        
+                      </table>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>TOTAL: 5</td>
+      <td>SUCCESS: 5</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    <tr id="record_1_1">
+      <th class="success" style="width:5em;">success</td>
+      <td colspan="2">haha</td>
+      <td style="text-align:center;width:6em;">493.0 ms</td>
+      <td class="detail">
+
+        <a class="button" href="#popup_log_1_1">log</a>
+        <div id="popup_log_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://www.kuaidi100.com/query?type=huitongkuaidi&postid=350757819119
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          get
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: python-requests/2.18.4
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>start_timestamp</th>
+                      <td>
+                        
+                          1534937249.3308015
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>params</th>
+                      <td>
+                        
+                          {'type': 'huitongkuaidi', 'postid': '350757819119'}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          None
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Server</strong>: nginx
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Wed, 22 Aug 2018 11:27:31 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: text/html;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Accept-Encoding
+                            </div>
+                            
+                            <div>
+                              <strong>P3P</strong>: CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+                            </div>
+                            
+                            <div>
+                              <strong>Cache-Control</strong>: no-cache
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>content</th>
+                        <td>
+                          
+                            
+                              <pre>{&#34;message&#34;:&#34;ok&#34;,&#34;nu&#34;:&#34;350757819119&#34;,&#34;ischeck&#34;:&#34;1&#34;,&#34;condition&#34;:&#34;F00&#34;,&#34;com&#34;:&#34;huitongkuaidi&#34;,&#34;status&#34;:&#34;200&#34;,&#34;state&#34;:&#34;3&#34;,&#34;data&#34;:[{&#34;time&#34;:&#34;2017-12-20 21:17:13&#34;,&#34;ftime&#34;:&#34;2017-12-20 21:17:13&#34;,&#34;context&#34;:&#34;[宿迁市]宿迁市【沭阳】，孙先生代18351193388 已签收&#34;,&#34;location&#34;:&#34;宿迁市&#34;},{&#34;time&#34;:&#34;2017-12-20 15:30:04&#34;,&#34;ftime&#34;:&#34;2017-12-20 15:30:04&#34;,&#34;context&#34;:&#34;[宿迁市]宿迁市【沭阳】，【孙高岭/15358315151】正在派件&#34;,&#34;location&#34;:&#34;宿迁市&#34;},{&#34;time&#34;:&#34;2017-12-20 09:37:47&#34;,&#34;ftime&#34;:&#34;2017-12-20 09:37:47&#34;,&#34;context&#34;:&#34;[宿迁市]到宿迁市【沭阳】&#34;,&#34;location&#34;:&#34;宿迁市&#34;},{&#34;time&#34;:&#34;2017-12-20 05:47:17&#34;,&#34;ftime&#34;:&#34;2017-12-20 05:47:17&#34;,&#34;context&#34;:&#34;[淮安市]淮安市【淮安转运中心】，正发往【沭阳】&#34;,&#34;location&#34;:&#34;淮安市&#34;},{&#34;time&#34;:&#34;2017-12-20 05:13:58&#34;,&#34;ftime&#34;:&#34;2017-12-20 05:13:58&#34;,&#34;context&#34;:&#34;[淮安市]到淮安市【淮安转运中心】&#34;,&#34;location&#34;:&#34;淮安市&#34;},{&#34;time&#34;:&#34;2017-12-20 00:57:51&#34;,&#34;ftime&#34;:&#34;2017-12-20 00:57:51&#34;,&#34;context&#34;:&#34;[南京市]南京市【南京转运中心】，正发往【淮安转运中心】&#34;,&#34;location&#34;:&#34;南京市&#34;},{&#34;time&#34;:&#34;2017-12-19 20:06:37&#34;,&#34;ftime&#34;:&#34;2017-12-19 20:06:37&#34;,&#34;context&#34;:&#34;[南京市]到南京市【南京转运中心】&#34;,&#34;location&#34;:&#34;南京市&#34;},{&#34;time&#34;:&#34;2017-12-19 03:50:43&#34;,&#34;ftime&#34;:&#34;2017-12-19 03:50:43&#34;,&#34;context&#34;:&#34;[西安市]西安市【西安转运中心】，正发往【南京转运中心】&#34;,&#34;location&#34;:&#34;西安市&#34;},{&#34;time&#34;:&#34;2017-12-18 23:38:28&#34;,&#34;ftime&#34;:&#34;2017-12-18 23:38:28&#34;,&#34;context&#34;:&#34;[西安市]到西安市【西安转运中心】&#34;,&#34;location&#34;:&#34;西安市&#34;},{&#34;time&#34;:&#34;2017-12-18 19:46:29&#34;,&#34;ftime&#34;:&#34;2017-12-18 19:46:29&#34;,&#34;context&#34;:&#34;[西安市]到西安市【西安南郊二站集货点】&#34;,&#34;location&#34;:&#34;西安市&#34;},{&#34;time&#34;:&#34;2017-12-17 21:29:25&#34;,&#34;ftime&#34;:&#34;2017-12-17 21:29:25&#34;,&#34;context&#34;:&#34;[西安市]西安市【西安西郊五站】，【赵永刚/02962255063】已揽收&#34;,&#34;location&#34;:&#34;西安市&#34;}]}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                        
+                      
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://www.kuaidi100.com/query?type=huitongkuaidi&postid=350757819119
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                        
+                      
+                        
+                  </table>
+              </div>
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>1878</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>493.0</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>490.773</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        
+
+      </td>
+    </tr>
+  
+    
+    <tr id="record_1_2">
+      <th class="success" style="width:5em;">success</td>
+      <td colspan="2">haha</td>
+      <td style="text-align:center;width:6em;">81.0 ms</td>
+      <td class="detail">
+
+        <a class="button" href="#popup_log_1_2">log</a>
+        <div id="popup_log_1_2" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_2">&times;</a>
+
+            <div class="content">
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://www.kuaidi100.com/query?type=huitongkuaidi&postid=350757819120
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          get
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: python-requests/2.18.4
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>start_timestamp</th>
+                      <td>
+                        
+                          1534937249.8468015
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>params</th>
+                      <td>
+                        
+                          {'type': 'huitongkuaidi', 'postid': '350757819120'}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          None
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Server</strong>: nginx
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Wed, 22 Aug 2018 11:27:31 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: text/html;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Accept-Encoding
+                            </div>
+                            
+                            <div>
+                              <strong>P3P</strong>: CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+                            </div>
+                            
+                            <div>
+                              <strong>Cache-Control</strong>: no-cache
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>content</th>
+                        <td>
+                          
+                            
+                              <pre>{&#34;message&#34;:&#34;ok&#34;,&#34;nu&#34;:&#34;350757819120&#34;,&#34;ischeck&#34;:&#34;1&#34;,&#34;condition&#34;:&#34;F00&#34;,&#34;com&#34;:&#34;huitongkuaidi&#34;,&#34;status&#34;:&#34;200&#34;,&#34;state&#34;:&#34;3&#34;,&#34;data&#34;:[{&#34;time&#34;:&#34;2017-12-20 18:26:39&#34;,&#34;ftime&#34;:&#34;2017-12-20 18:26:39&#34;,&#34;context&#34;:&#34;[嘉兴市]嘉兴市【嘉兴洪合分部】，拍照签收 已签收&#34;,&#34;location&#34;:&#34;嘉兴市&#34;},{&#34;time&#34;:&#34;2017-12-20 14:05:29&#34;,&#34;ftime&#34;:&#34;2017-12-20 14:05:29&#34;,&#34;context&#34;:&#34;[嘉兴市]嘉兴市【嘉兴洪合分部】，【甘正金/13157320355】正在派件&#34;,&#34;location&#34;:&#34;嘉兴市&#34;},{&#34;time&#34;:&#34;2017-12-20 14:04:29&#34;,&#34;ftime&#34;:&#34;2017-12-20 14:04:29&#34;,&#34;context&#34;:&#34;[嘉兴市]到嘉兴市【嘉兴洪合分部】&#34;,&#34;location&#34;:&#34;嘉兴市&#34;},{&#34;time&#34;:&#34;2017-12-20 03:12:19&#34;,&#34;ftime&#34;:&#34;2017-12-20 03:12:19&#34;,&#34;context&#34;:&#34;[嘉兴市]嘉兴市【嘉兴转运中心】，正发往【嘉兴洪合分部】&#34;,&#34;location&#34;:&#34;嘉兴市&#34;},{&#34;time&#34;:&#34;2017-12-20 02:07:27&#34;,&#34;ftime&#34;:&#34;2017-12-20 02:07:27&#34;,&#34;context&#34;:&#34;[嘉兴市]到嘉兴市【嘉兴转运中心】&#34;,&#34;location&#34;:&#34;嘉兴市&#34;},{&#34;time&#34;:&#34;2017-12-20 00:42:10&#34;,&#34;ftime&#34;:&#34;2017-12-20 00:42:10&#34;,&#34;context&#34;:&#34;[杭州市]杭州市【杭州转运中心】，正发往【嘉兴转运中心】&#34;,&#34;location&#34;:&#34;杭州市&#34;},{&#34;time&#34;:&#34;2017-12-19 23:39:24&#34;,&#34;ftime&#34;:&#34;2017-12-19 23:39:24&#34;,&#34;context&#34;:&#34;[杭州市]到杭州市【杭州转运中心】&#34;,&#34;location&#34;:&#34;杭州市&#34;},{&#34;time&#34;:&#34;2017-12-19 02:46:40&#34;,&#34;ftime&#34;:&#34;2017-12-19 02:46:40&#34;,&#34;context&#34;:&#34;[西安市]西安市【西安转运中心】，正发往【杭州转运中心】&#34;,&#34;location&#34;:&#34;西安市&#34;},{&#34;time&#34;:&#34;2017-12-18 23:48:42&#34;,&#34;ftime&#34;:&#34;2017-12-18 23:48:42&#34;,&#34;context&#34;:&#34;[西安市]到西安市【西安转运中心】&#34;,&#34;location&#34;:&#34;西安市&#34;},{&#34;time&#34;:&#34;2017-12-18 22:35:09&#34;,&#34;ftime&#34;:&#34;2017-12-18 22:35:09&#34;,&#34;context&#34;:&#34;[西安市]到西安市【西安南郊二站集货点】&#34;,&#34;location&#34;:&#34;西安市&#34;},{&#34;time&#34;:&#34;2017-12-17 21:29:25&#34;,&#34;ftime&#34;:&#34;2017-12-17 21:29:25&#34;,&#34;context&#34;:&#34;[西安市]西安市【西安西郊五站】，【赵永刚/02962255063】已揽收&#34;,&#34;location&#34;:&#34;西安市&#34;}]}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                        
+                      
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://www.kuaidi100.com/query?type=huitongkuaidi&postid=350757819120
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                        
+                      
+                        
+                  </table>
+              </div>
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>1915</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>81.0</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>78.185</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        
+
+      </td>
+    </tr>
+  
+    
+    <tr id="record_1_3">
+      <th class="success" style="width:5em;">success</td>
+      <td colspan="2">haha</td>
+      <td style="text-align:center;width:6em;">69.0 ms</td>
+      <td class="detail">
+
+        <a class="button" href="#popup_log_1_3">log</a>
+        <div id="popup_log_1_3" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_3">&times;</a>
+
+            <div class="content">
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://www.kuaidi100.com/query?type=huitongkuaidi&postid=350757819121
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          get
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: python-requests/2.18.4
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>start_timestamp</th>
+                      <td>
+                        
+                          1534937249.9468014
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>params</th>
+                      <td>
+                        
+                          {'type': 'huitongkuaidi', 'postid': '350757819121'}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          None
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Server</strong>: nginx
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Wed, 22 Aug 2018 11:27:31 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: text/html;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Accept-Encoding
+                            </div>
+                            
+                            <div>
+                              <strong>P3P</strong>: CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+                            </div>
+                            
+                            <div>
+                              <strong>Cache-Control</strong>: no-cache
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>content</th>
+                        <td>
+                          
+                            
+                              <pre>{&#34;message&#34;:&#34;ok&#34;,&#34;nu&#34;:&#34;350757819121&#34;,&#34;ischeck&#34;:&#34;1&#34;,&#34;condition&#34;:&#34;F00&#34;,&#34;com&#34;:&#34;huitongkuaidi&#34;,&#34;status&#34;:&#34;200&#34;,&#34;state&#34;:&#34;3&#34;,&#34;data&#34;:[{&#34;time&#34;:&#34;2017-12-20 20:43:26&#34;,&#34;ftime&#34;:&#34;2017-12-20 20:43:26&#34;,&#34;context&#34;:&#34;[广州市]广州市【广州白云区六部】，林 已签收&#34;,&#34;location&#34;:&#34;广州市&#34;},{&#34;time&#34;:&#34;2017-12-20 15:09:38&#34;,&#34;ftime&#34;:&#34;2017-12-20 15:09:38&#34;,&#34;context&#34;:&#34;[广州市]广州市【广州白云区六部】，【刘光琳/13570031759】正在派件&#34;,&#34;location&#34;:&#34;广州市&#34;},{&#34;time&#34;:&#34;2017-12-20 12:54:50&#34;,&#34;ftime&#34;:&#34;2017-12-20 12:54:50&#34;,&#34;context&#34;:&#34;[广州市]到广州市【广州白云区六部】&#34;,&#34;location&#34;:&#34;广州市&#34;},{&#34;time&#34;:&#34;2017-12-20 11:02:36&#34;,&#34;ftime&#34;:&#34;2017-12-20 11:02:36&#34;,&#34;context&#34;:&#34;[广州市]广州市【广州转运中心】，正发往【广州白云区六部】&#34;,&#34;location&#34;:&#34;广州市&#34;},{&#34;time&#34;:&#34;2017-12-20 07:58:26&#34;,&#34;ftime&#34;:&#34;2017-12-20 07:58:26&#34;,&#34;context&#34;:&#34;[广州市]到广州市【广州转运中心】&#34;,&#34;location&#34;:&#34;广州市&#34;},{&#34;time&#34;:&#34;2017-12-19 03:21:02&#34;,&#34;ftime&#34;:&#34;2017-12-19 03:21:02&#34;,&#34;context&#34;:&#34;[西安市]西安市【西安转运中心】，正发往【广州转运中心】&#34;,&#34;location&#34;:&#34;西安市&#34;},{&#34;time&#34;:&#34;2017-12-18 23:46:55&#34;,&#34;ftime&#34;:&#34;2017-12-18 23:46:55&#34;,&#34;context&#34;:&#34;[西安市]到西安市【西安转运中心】&#34;,&#34;location&#34;:&#34;西安市&#34;},{&#34;time&#34;:&#34;2017-12-18 22:48:41&#34;,&#34;ftime&#34;:&#34;2017-12-18 22:48:41&#34;,&#34;context&#34;:&#34;[西安市]到西安市【西安南郊二站集货点】&#34;,&#34;location&#34;:&#34;西安市&#34;},{&#34;time&#34;:&#34;2017-12-17 21:29:25&#34;,&#34;ftime&#34;:&#34;2017-12-17 21:29:25&#34;,&#34;context&#34;:&#34;[西安市]西安市【西安西郊五站】，【赵永刚/02962255063】已揽收&#34;,&#34;location&#34;:&#34;西安市&#34;}]}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                        
+                      
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://www.kuaidi100.com/query?type=huitongkuaidi&postid=350757819121
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                        
+                      
+                        
+                  </table>
+              </div>
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>1597</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>69.0</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>66.957</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        
+
+      </td>
+    </tr>
+  
+    
+    <tr id="record_1_4">
+      <th class="success" style="width:5em;">success</td>
+      <td colspan="2">haha</td>
+      <td style="text-align:center;width:6em;">369.0 ms</td>
+      <td class="detail">
+
+        <a class="button" href="#popup_log_1_4">log</a>
+        <div id="popup_log_1_4" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_4">&times;</a>
+
+            <div class="content">
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://www.kuaidi100.com/query?type=huitongkuaidi&postid=350757819122
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          get
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: python-requests/2.18.4
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>start_timestamp</th>
+                      <td>
+                        
+                          1534937250.0258012
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>params</th>
+                      <td>
+                        
+                          {'type': 'huitongkuaidi', 'postid': '350757819122'}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          None
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Server</strong>: nginx
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Wed, 22 Aug 2018 11:27:32 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: text/html;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Accept-Encoding
+                            </div>
+                            
+                            <div>
+                              <strong>P3P</strong>: CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+                            </div>
+                            
+                            <div>
+                              <strong>Cache-Control</strong>: no-cache
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>content</th>
+                        <td>
+                          
+                            
+                              <pre>{&#34;message&#34;:&#34;ok&#34;,&#34;nu&#34;:&#34;350757819122&#34;,&#34;ischeck&#34;:&#34;1&#34;,&#34;condition&#34;:&#34;F00&#34;,&#34;com&#34;:&#34;huitongkuaidi&#34;,&#34;status&#34;:&#34;200&#34;,&#34;state&#34;:&#34;3&#34;,&#34;data&#34;:[{&#34;time&#34;:&#34;2017-12-20 17:57:29&#34;,&#34;ftime&#34;:&#34;2017-12-20 17:57:29&#34;,&#34;context&#34;:&#34;[广州市]广州市【广州白云龙头分部】，拍照签收 已签收&#34;,&#34;location&#34;:&#34;广州市&#34;},{&#34;time&#34;:&#34;2017-12-20 14:40:57&#34;,&#34;ftime&#34;:&#34;2017-12-20 14:40:57&#34;,&#34;context&#34;:&#34;[广州市]广州市【广州白云龙头分部】，【陈刚/17688391222】正在派件&#34;,&#34;location&#34;:&#34;广州市&#34;},{&#34;time&#34;:&#34;2017-12-20 12:49:22&#34;,&#34;ftime&#34;:&#34;2017-12-20 12:49:22&#34;,&#34;context&#34;:&#34;[广州市]到广州市【广州白云龙头分部】&#34;,&#34;location&#34;:&#34;广州市&#34;},{&#34;time&#34;:&#34;2017-12-20 12:35:00&#34;,&#34;ftime&#34;:&#34;2017-12-20 12:35:00&#34;,&#34;context&#34;:&#34;[广州市]广州市【广州转运中心】，正发往【广州白云龙头分部】&#34;,&#34;location&#34;:&#34;广州市&#34;},{&#34;time&#34;:&#34;2017-12-20 07:55:23&#34;,&#34;ftime&#34;:&#34;2017-12-20 07:55:23&#34;,&#34;context&#34;:&#34;[广州市]到广州市【广州转运中心】&#34;,&#34;location&#34;:&#34;广州市&#34;},{&#34;time&#34;:&#34;2017-12-19 03:21:02&#34;,&#34;ftime&#34;:&#34;2017-12-19 03:21:02&#34;,&#34;context&#34;:&#34;[西安市]西安市【西安转运中心】，正发往【广州转运中心】&#34;,&#34;location&#34;:&#34;西安市&#34;},{&#34;time&#34;:&#34;2017-12-19 00:11:51&#34;,&#34;ftime&#34;:&#34;2017-12-19 00:11:51&#34;,&#34;context&#34;:&#34;[西安市]到西安市【西安转运中心】&#34;,&#34;location&#34;:&#34;西安市&#34;},{&#34;time&#34;:&#34;2017-12-18 22:43:05&#34;,&#34;ftime&#34;:&#34;2017-12-18 22:43:05&#34;,&#34;context&#34;:&#34;[西安市]到西安市【西安南郊二站集货点】&#34;,&#34;location&#34;:&#34;西安市&#34;},{&#34;time&#34;:&#34;2017-12-17 21:29:25&#34;,&#34;ftime&#34;:&#34;2017-12-17 21:29:25&#34;,&#34;context&#34;:&#34;[西安市]西安市【西安西郊五站】，【赵永刚/02962255063】已揽收&#34;,&#34;location&#34;:&#34;西安市&#34;}]}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                        
+                      
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://www.kuaidi100.com/query?type=huitongkuaidi&postid=350757819122
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                        
+                      
+                        
+                  </table>
+              </div>
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>1615</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>369.0</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>368.39</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        
+
+      </td>
+    </tr>
+  
+    
+    <tr id="record_1_5">
+      <th class="success" style="width:5em;">success</td>
+      <td colspan="2">haha</td>
+      <td style="text-align:center;width:6em;">77.0 ms</td>
+      <td class="detail">
+
+        <a class="button" href="#popup_log_1_5">log</a>
+        <div id="popup_log_1_5" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_5">&times;</a>
+
+            <div class="content">
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                          http://www.kuaidi100.com/query?type=huitongkuaidi&postid=350757819123
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                          get
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                          
+                          <div>
+                            <strong>User-Agent</strong>: python-requests/2.18.4
+                          </div>
+                          
+                          <div>
+                            <strong>Accept-Encoding</strong>: gzip, deflate
+                          </div>
+                          
+                          <div>
+                            <strong>Accept</strong>: */*
+                          </div>
+                          
+                          <div>
+                            <strong>Connection</strong>: keep-alive
+                          </div>
+                          
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>start_timestamp</th>
+                      <td>
+                        
+                          1534937250.4168012
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>params</th>
+                      <td>
+                        
+                          {'type': 'huitongkuaidi', 'postid': '350757819123'}
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>body</th>
+                      <td>
+                        
+                          None
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            
+                            <div>
+                              <strong>Server</strong>: nginx
+                            </div>
+                            
+                            <div>
+                              <strong>Date</strong>: Wed, 22 Aug 2018 11:27:32 GMT
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Type</strong>: text/html;charset=UTF-8
+                            </div>
+                            
+                            <div>
+                              <strong>Transfer-Encoding</strong>: chunked
+                            </div>
+                            
+                            <div>
+                              <strong>Connection</strong>: keep-alive
+                            </div>
+                            
+                            <div>
+                              <strong>Vary</strong>: Accept-Encoding
+                            </div>
+                            
+                            <div>
+                              <strong>P3P</strong>: CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+                            </div>
+                            
+                            <div>
+                              <strong>Cache-Control</strong>: no-cache
+                            </div>
+                            
+                            <div>
+                              <strong>Content-Encoding</strong>: gzip
+                            </div>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>content</th>
+                        <td>
+                          
+                            
+                              <pre>{&#34;message&#34;:&#34;ok&#34;,&#34;nu&#34;:&#34;350757819123&#34;,&#34;ischeck&#34;:&#34;1&#34;,&#34;condition&#34;:&#34;F00&#34;,&#34;com&#34;:&#34;huitongkuaidi&#34;,&#34;status&#34;:&#34;200&#34;,&#34;state&#34;:&#34;3&#34;,&#34;data&#34;:[{&#34;time&#34;:&#34;2017-12-20 18:56:04&#34;,&#34;ftime&#34;:&#34;2017-12-20 18:56:04&#34;,&#34;context&#34;:&#34;[沈阳市]沈阳市【沈阳张士开发区二部】，刘 18842448788 代签，切勿轻易投诉，如果没收到快件，麻烦您致电快递员，谢谢合作！ 已签收&#34;,&#34;location&#34;:&#34;沈阳市&#34;},{&#34;time&#34;:&#34;2017-12-20 12:26:18&#34;,&#34;ftime&#34;:&#34;2017-12-20 12:26:18&#34;,&#34;context&#34;:&#34;[沈阳市]沈阳市【沈阳张士开发区二部】，【刘麟/17624078222】正在派件&#34;,&#34;location&#34;:&#34;沈阳市&#34;},{&#34;time&#34;:&#34;2017-12-20 12:26:18&#34;,&#34;ftime&#34;:&#34;2017-12-20 12:26:18&#34;,&#34;context&#34;:&#34;[沈阳市]到沈阳市【沈阳张士开发区二部】&#34;,&#34;location&#34;:&#34;沈阳市&#34;},{&#34;time&#34;:&#34;2017-12-20 08:29:50&#34;,&#34;ftime&#34;:&#34;2017-12-20 08:29:50&#34;,&#34;context&#34;:&#34;[沈阳市]沈阳市【沈阳转运中心】，正发往【沈阳张士开发区二部】&#34;,&#34;location&#34;:&#34;沈阳市&#34;},{&#34;time&#34;:&#34;2017-12-20 07:02:25&#34;,&#34;ftime&#34;:&#34;2017-12-20 07:02:25&#34;,&#34;context&#34;:&#34;[沈阳市]到沈阳市【沈阳转运中心】&#34;,&#34;location&#34;:&#34;沈阳市&#34;},{&#34;time&#34;:&#34;2017-12-19 03:53:53&#34;,&#34;ftime&#34;:&#34;2017-12-19 03:53:53&#34;,&#34;context&#34;:&#34;[西安市]西安市【西安转运中心】，正发往【沈阳转运中心】&#34;,&#34;location&#34;:&#34;西安市&#34;},{&#34;time&#34;:&#34;2017-12-18 23:07:30&#34;,&#34;ftime&#34;:&#34;2017-12-18 23:07:30&#34;,&#34;context&#34;:&#34;[西安市]到西安市【西安转运中心】&#34;,&#34;location&#34;:&#34;西安市&#34;},{&#34;time&#34;:&#34;2017-12-18 22:46:47&#34;,&#34;ftime&#34;:&#34;2017-12-18 22:46:47&#34;,&#34;context&#34;:&#34;[西安市]到西安市【西安南郊二站集货点】&#34;,&#34;location&#34;:&#34;西安市&#34;},{&#34;time&#34;:&#34;2017-12-17 21:29:25&#34;,&#34;ftime&#34;:&#34;2017-12-17 21:29:25&#34;,&#34;context&#34;:&#34;[西安市]西安市【西安西郊五站】，【赵永刚/02962255063】已揽收&#34;,&#34;location&#34;:&#34;西安市&#34;}]}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                        
+                      
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://www.kuaidi100.com/query?type=huitongkuaidi&postid=350757819123
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      
+                        
+                      
+                        
+                  </table>
+              </div>
+
+              <h3>Validators:</h3>
+              <div style="overflow: auto">
+                  <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                  </table>
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>1727</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>77.0</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>74.823</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+</body>

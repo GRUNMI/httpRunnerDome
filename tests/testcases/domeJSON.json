@@ -1,0 +1,31 @@
+[
+  {
+    "config":{
+      "name":"haha",
+      "request":{
+        "base_url":"http://www.kuaidi100.com"
+      }
+    }
+  },
+  {
+    "test":{
+      "name":"haha",
+      "parameters":[{
+        "postid2":"${get_postids(5)}"
+      }],
+      "request":{
+        "url":"/query",
+        "method":"get",
+        "params":{
+          "type":"huitongkuaidi",
+          "postid":"$postid2"
+        }
+      },
+      "validata":[{
+        "eq":[
+          "status_code",200
+        ]
+      }]
+    }
+  }
+]

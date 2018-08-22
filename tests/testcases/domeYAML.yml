@@ -1,0 +1,80 @@
+- config:
+    name: test kuaidi100 api
+    request:
+        base_url: http://www.kuaidi100.com
+- test:
+    name: test kuaidi100 one
+    request:
+        url: /query
+        method: GET
+        params:
+            type: huitongkuaidi
+            postid: 350757858666
+    validate:
+        - eq: [status_code, 200]
+        - eq: [content.message, "ok"]
+        - eq: [content.com, "huitongkuaidi"]
+        - eq: [content.nu, "350757858666"]
+    extract:
+        - postid: content.nu
+
+- test:
+    name: test kuaidi100 two
+    request:
+        url: /query
+        method: GET
+        params:
+            type: huitongkuaidi
+            postid: $postid
+    validate:
+        - eq: [status_code, 200]
+        - eq: [content.message, "ok"]
+        - eq: [content.com, "huitongkuaidi"]
+        - eq: [content.nu, "350757858666"]
+
+- test:
+    name: test kuaidi100 csv
+    parameters:
+        - postid1: ${P(postid.csv)}
+    request:
+        url: /query
+        method: GET
+        params:
+            type: huitongkuaidi
+            postid: $postid1
+    validate:
+        - eq: [status_code, 200]
+        - eq: [content.message, "ok"]
+        - eq: [content.com, "huitongkuaidi"]
+
+- test:
+    name: test kuaidi100 five
+    parameters:
+        - type1: ${get_post_id()}
+        - postid2: ${get_postids(5)}
+    request:
+        url: /query
+        method: GET
+        params:
+            type: $type1
+            postid: $postid2
+    validate:
+        - eq: [status_code, 200]
+        - eq: [content.message, "ok"]
+        - eq: [content.com, "huitongkuaidi"]
+
+- test:
+    name: test kuaidi100 two
+    parameters:
+        - type1: ${get_post_id()}
+        - postid2: ${get_post_id()}
+    request:
+        url: /query
+        method: GET
+        params:
+            type: $type1
+            postid: $postid2
+    validate:
+        - eq: [status_code, 200]
+        - eq: [content.message, "ok"]
+        - eq: [content.com, "huitongkuaidi"]
